@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">    
 <head>
-    <script async src="https://tally.so/widgets/embed.js"></script>
     <meta charset="UTF
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApexLeadsData - Verified B2B Contact Data</title>
@@ -39,7 +38,7 @@
         .table-wrapper { width: 100%; overflow-x: auto; background-color: #000000; border: 1px solid #262626; border-radius: 8px; margin-bottom: 60px; }
         table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; }
         th, td { padding: 16px; border-bottom: 1px solid #262626; }
-        th { background-color: #111111; color: #ffffff; font-weight: 600; }
+        th { background-color: #111111; color: #ffffff; font-weight: 600; }                         
         tr:last-child td { border-bottom: none; }
         tr:hover td { background-color: #0a0a0a; }
         
@@ -54,6 +53,14 @@
         .nav-links a, .back-link { color: #a3a3a3; text-decoration: none; margin: 0 15px; transition: color 0.2s; cursor: pointer; }
         .nav-links a:hover, .back-link:hover { color: #ffffff; }
         .back-link { display: inline-block; margin-top: 30px; font-weight: 600; color: #ffffff; }
+        /* Apex Custom Form Styling */
+.custom-form-container { max-width: 550px; margin: 40px auto 0 auto; text-align: left; background-color: #111111; padding: 35px; border-radius: 8px; border: 1px solid #262626; }
+.apex-form label { display: block; margin-bottom: 8px; font-weight: 600; color: #ffffff; font-size: 0.95rem; }
+.apex-form input, .apex-form textarea { width: 100%; padding: 14px; margin-bottom: 25px; background-color: #000000; border: 1px solid #333333; color: #ffffff; border-radius: 4px; font-family: inherit; font-size: 0.95rem; box-sizing: border-box; transition: border-color 0.2s; }
+.apex-form input:focus, .apex-form textarea:focus { outline: none; border-color: #ffffff; }
+.apex-form input::placeholder, .apex-form textarea::placeholder { color: #555555; }
+.submit-btn { width: 100%; background-color: #ffffff; color: #000000; padding: 16px; font-size: 1.1rem; font-weight: 800; border: none; border-radius: 4px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+.submit-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(255,255,255,0.1); background-color: #e5e5e5; }
     </style>
 </head>
 <body>
@@ -72,7 +79,26 @@
             <div class="hero">
                 <h1>Stop searching - start selling</h1>
                 <p>We build highly accurate, human-verified B2B contact lists of key decision-makers in the UK and US markets. Fuel your outbound engine with data that actually converts.</p>
-                <a href="#tally-open=ZjWjqB&tally-emoji-text=👋&tally-emoji-animation=wave" class="cta-button">Request a Free Sample</a>
+                 <div class="custom-form-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="apex-form">
+        <!-- BURADAKİ VALUE KISMINA MAİLİNE GELEN ANAHTARI YAPIŞTIR -->
+        <input type="hidden" name="access_key" value="c906b6cc-e9e6-42b5-b488-ca9d247610e6">
+        
+        <!-- SANA GELECEK MAİLİN BAŞLIĞI -->
+        <input type="hidden" name="subject" value="Yeni ApexLeads Data Talebi!">
+
+        <label>What is your company website?</label>
+        <input type="text" name="website" placeholder="e.g. www.yourcompany.com" required>
+
+        <label>Who is your ideal target audience?</label>
+        <textarea name="target_audience" rows="4" placeholder="e.g. B2B SaaS CEOs in the UK" required></textarea>
+
+        <label>Where should we send your verified leads?</label>
+        <input type="email" name="email" placeholder="e.g. ceo@yourcompany.com" required>
+
+        <button type="submit" class="submit-btn">Get My Free Leads →</button>
+    </form>
+</div>
             </div>
 
             <h2>How It Works?</h2>
